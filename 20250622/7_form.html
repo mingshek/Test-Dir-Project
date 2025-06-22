@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單 form</title>
+</head>
+<body>
+   <fieldset>
+     <legend>表單介紹</legend>
+     <!-- 表單元素   欄位元素-->
+      <form width="100%" method="get" action ="./thinks.html">  
+        <table>
+            <tr>
+                <td width ="100">帳號 : </td>
+                <td>
+                    <input type="text" value= "admin" name ="userID" 
+                    disabled placeholder="請輸入帳號" ></td> 
+            </tr>
+            <tr>
+                <td>密碼 : </td>
+                <td><input type="password" name= "wd" id="" placeholder="請輸入密碼" required></td>
+            </tr>
+            <tr>
+                <td>性別 : </td>
+                <td>
+                    <input id="g_man" type="radio" name="gender" value="man"> 
+                    <label for="g_man">男性</label>
+                    <input id="g_woman" type="radio" name="gender" value="woman">
+                    <label for="g_woman">女性</label>
+                    <input type="radio" name="gender" value="unknow" checked> 
+                    <label>不提供</label>
+                    <input type="radio" name="gender" value="cancel"> 
+                    <label>取消</label>
+                </td>
+            </tr>
+            <tr>    
+                <td>滿18歲成年 : </td>
+                <td>
+                    <label>
+                        <input type="radio" name="over18" value="true"> 是
+                    </label>
+                    <label>
+                        <input type="radio" name="over18" value="false" checked> 否    
+                    </label>                   
+                </td>
+            </tr>
+            <tr>    
+                <td>興趣 : </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="hobby[]" value="reading"> 閱讀
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobby[]" value="sport"> 運動   
+                    </label>                   
+                    <label>
+                        <input type="checkbox" name="hobby[]" value="music" checked> 音樂   
+                    </label>                   
+                </td>
+               
+            </tr>
+            <tr>    
+                <td>居住地 : </td>
+                <td>
+                    <select name="city" id="">
+                        <option> -- 請選擇 -- :</option>
+                        <option value="taipei" selected>台北市</option>
+                        <option value="newtaipei">新北市</option>
+                        <option value="taichung">台中市</option>
+                        <option value="tainan">台南市</option>
+                        <option value="kaohsiung">高雄市</option>
+                    </select>
+                </td>
+               
+            </tr>
+            <tr>
+                <td valign = "top"> <label for="message">附註 : </label></td>
+                <td>
+                    <textarea name="note" id="message" cols="20" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td valign = "top"> <label for="message">上傳附件 : </label></td>
+                <td>
+                    <input type = "file" name="attachment" accept="image/*, .pdf, .docx, .txt" multiple>
+                </td>
+            </tr>
+
+        </table>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                    <input type="submit" value="送出" width="500">
+                    <input type="reset" value="重設">
+                    <input type="button" value="按鈕">
+                    <button type="button" onclick="alert('測試鈕按')">這是測試按鈕</button>
+                </td>
+            </tr>
+        </tfoot>
+      </form>
+     
+   <!-- ;dkgfd; -->
+   d;flkgdf;lg
+
+   </fieldset>
+
+
+
+
+  <table>
+    <tr>
+        <td> 帳號 : </td>
+    </tr>
+
+  </table>
+
+    帳號 : <input type="text" name="name" placeholder="請輸入姓名">
+    密碼 : <input type="text" name="PW" placeholder="請輸入密碼">
+    
+
+</body>
+</html>
