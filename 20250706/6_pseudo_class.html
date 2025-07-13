@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽類別</title>
+    <style>
+        a{
+            color: red;
+            /* text-decoration: none; */
+            }
+        
+        a:hover {
+            color: blue;
+        }
+        a:visited {
+            color: green;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:focus {
+            color: purple;
+        }
+        
+        a:link {
+            color: darkorange;
+       
+        }
+
+    div {
+        color: rgb(182, 127, 255);  }
+    
+    div:hover {
+        color: coral;
+    }
+
+    input:focus {
+        color: blue;
+        background-color: yellow;
+    }
+    input:invalid {
+        background-color: red
+    }
+
+    li:first-child,
+    li:last-child{
+        color: red;}
+
+    li:nth-child(2) {
+        color: blue; }
+
+    li:nth-child(3) {
+        color: orange; }        
+
+    li:nth-child(2n) {
+        color: green;
+        background-color: yellow; 
+      }    
+
+    li:nth-child(odd) {
+        color: purple;
+        background-color: lightblue; 
+      }
+
+    
+    li:nth-last-child (3) {
+        color: green; }
+        
+        
+    table thead {
+        background-color: black;
+        color: white;}
+
+    table tbody>tr:nth-child(2n) {
+        background-color: lightgoldenrodyellow;
+    }
+    
+    header:first-of-type {
+        color: red;
+        background-color: lightblue;
+    }
+        
+    </style>
+
+ 
+</head>
+<body>
+  <ul>
+    <li> Item 01  </li>      
+    <header> first 01  </header>
+    <header> first 02  </header>
+    <header> first 03  </header>
+    <header> first 04  </header>
+  </ul>
+
+    <!-- <p>
+        <header> First </header>
+        <li> Item 01  </li>
+        <li> Item 02  </li>
+        <li> Item 03  </li>
+        <li> Item 04  </li>
+        <li> Item 05  </li>
+    </p> -->
+    <!-- table>(tr>td{No.$$}+td{Name $$})*10 -->
+     <table border="1" cellpadding="5" cellspacing="0" width="100%"> 
+        <thead>
+            <tr>
+                <td>編號</td>
+                <td>名稱</td>
+            </tr>
+            </thead>
+            
+        <tr>
+            <td>No.01</td>
+            <td>Name 01</td>
+        </tr>
+        <tr>
+            <td>No.02</td>
+            <td>Name 02</td>
+        </tr>
+        <tr>
+            <td>No.03</td>
+            <td>Name 03</td>
+        </tr>
+        <tr>
+            <td>No.04</td>
+            <td>Name 04</td>
+        </tr>
+        <tr>
+            <td>No.05</td>
+            <td>Name 05</td>
+        </tr>
+        <tr>
+            <td>No.06</td>
+            <td>Name 06</td>
+        </tr>
+        <tr>
+            <td>No.07</td>
+            <td>Name 07</td>
+        </tr>
+        <tr>
+            <td>No.08</td>
+            <td>Name 08</td>
+        </tr>
+        <tr>
+            <td>No.09</td>
+            <td>Name 09</td>
+        </tr>
+        <tr>
+            <td>No.10</td>
+            <td>Name 10</td>
+        </tr>
+     </table>
+
+    <ul>
+        <li>  001  </li>
+        <li>  002  </li>
+        <li>  003  </li>
+        <li>  004  </li>
+        <li>  005  </li>
+        <li>  006  </li>
+        <li>  007  </li>
+        <li>  008  </li>
+        <li>  009  </li>
+        <li>  010  </li>
+
+    </ul>    
+    <hr>
+    <input type="text" value="123" required>
+
+
+    <nav>
+        <a href="https://www.google.com/">Go1</a>
+        <a href="https://momo.com/">Momo</a>
+        <a href="https://facebook.com/">facebook</a>
+        <a href="#go2">Go2</a>
+    </nav>
+
+
+</body>
+</html>

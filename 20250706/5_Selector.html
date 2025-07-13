@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            color: green;
+        }
+        main div {
+            color: orange;
+        }
+
+        /* main .pink {
+            color: pink;
+        } */
+
+        main div.pink {
+            color: red;
+        
+        main div.pink.first {
+            color: blue;
+        }
+
+        /* > 子元素 */
+        article > div {
+            color:  blue !important; /*強制最高優先 避免做此寫法 */
+        }
+
+        article div.blue_a {
+            color:  blue !important; /*強制最高優先 避免做此寫法 */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="#go1">Go1</a>
+    <div> Lorem ipsum dolor sit amet 1.</div>
+    <main class="text-area"> 
+        <div> Lorem ipsum dolor sit amet 2.</div>
+        <header> Lorem ipsum dolor sit amet 3.</header>
+        <article>
+            <div> Lorem ipsum dolor sit amet 4.</div>
+            <div class="pink"> Lorem ipsum dolor sit amet 5.</div>
+            <div class="pink first"> Lorem ipsum dolor sit amet 6.</div>
+            <div> Lorem ipsum dolor sit amet 7.</div>
+            <div class="blue_a"> Lorem ipsum dolor sit amet 8.</div>
+            <header class = "pink"> Lorem ipsum dolor sit amet 9.</header>
+            <section>
+                <div> Lorem ipsum dolor sit amet 10.</div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

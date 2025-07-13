@@ -1,0 +1,8 @@
+/* 將CSS 切割或分類 */
+        h3,h5{
+            color: orange; }
+
+        h1{color: purple;}
+        
+        h3{color: darkblue;}
+        h3{color: rgb(139, 0, 107);}
