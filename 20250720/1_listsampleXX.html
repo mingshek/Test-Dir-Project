@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  /* 重置樣式 */
+  body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .main-nav a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .main-nav a:active {
+    transform: translateY(0);
+  }
+</style>
+
+<ul class="main-nav">
+  <li><a href="#">首頁</a></li>
+  <li><a href="#">關於我們</a></li>
+  <li><a href="#">服務項目</a></li>
+  <li><a href="#">作品集</a></li>
+  <li><a href="#">聯絡我們</a></li>
+</ul>    
+</body>
+</html>

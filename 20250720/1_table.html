@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        tr:nth-child(even) {
+            text-align: left;
+            background-color: #f003;
+
+         }
+         .hit {
+            color: red;
+         }
+
+
+       table{
+        border:3px solid red;
+        border-spacing: 10px;
+        border-collapse: collapse;     
+        empty-cells:hide ; 
+        box-shadow: inset 19px -15px 6px 5px #000000a1;
+      }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left; 
+        }
+        td:nth-last-child(2) {
+            text-align: right;
+        }    
+       th {
+         text-align: left;    
+         background-color: red;
+         color: white;
+         border: 2px solid white;
+
+       }
+       td {
+         text-align: center;
+         background-color: lightblue;
+         color: black;
+         border: 2px solid white;
+       } 
+
+    </style>
+
+
+          
+    <!-- <style>
+  .responsive-table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responsive-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .responsive-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+  }
+  
+  .responsive-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .responsive-table tr:hover {
+    background-color: #e3f2fd;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-table-container {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    
+    .responsive-table th:first-child,
+    .responsive-table td:first-child {
+      position: sticky;
+      left: 0;
+      background: white;
+      z-index: 9;
+    }
+    
+    .responsive-table th:first-child {
+      background: #2c3e50;
+      z-index: 11;
+    }
+  }
+</style>     -->
+</head>
+<body>
+ <div class="responsive-table-container">
+  <table class="responsive-table">
+    <thead>
+      <tr>
+        <th>員工姓名</th>
+        <th>部門</th>
+        <th>職位</th>
+        <th>入職日期</th>
+        <th>薪資</th>
+        <th>績效</th>
+        <th>狀態</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>張志明</td>
+        <td>技術部</td>
+        <td>資深前端工程師</td>
+        <td>2020-03-15</td>
+        <td>70,000</td>
+        <td>A+</td>
+        <td>在職</td>
+      </tr>
+      <tr>
+        <td>李美玲</td>
+        <td>設計部</td>
+        <td>資深 UI/UX 設計師</td>
+        <td>2019-08-20</td>
+        <td>65,000</td>
+        <td>A</td>
+        <td>在職</td>
+      </tr>
+      <tr>
+        <td>王大明</td>
+        <td>技術部</td>
+        <td>後端工程師</td>
+        <td>2021-01-10</td>
+        <td>60,000</td>
+        <td>B+</td>
+        <td>在職</td>
+      </tr>
+      <tr>
+        <td>張志明</td>
+        <td>技術部</td>
+        <td>資深前端工程師</td>
+        <td>2020-03-15</td>
+        <td>70,000</td>
+        <td>A+</td>
+        <td>在職</td>
+      </tr>
+      <tr>
+        <td>李美玲</td>
+        <td>設計部</td>
+        <td>資深 UI/UX 設計師</td>
+        <td>2019-08-20</td>
+        <td>65,000</td>
+        <td>A</td>
+        <td>在職</td>
+      </tr>
+      <tr>
+        <td>王大明</td>
+        <td>技術部</td>
+        <td>後端工程師</td>
+        <td>2021-01-10</td>
+        <td>60,000</td>
+        <td>B+</td>
+        <td>在職</td>
+      </tr>      
+    </tbody>
+  </table>
+</div> 
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <style>
+        .fz-px {
+            font-size: 32px;
+        }
+
+        .fz.60 {
+            font-size: 60%;
+        }
+        .fz-em {
+            font-size: 2em;/*相對於父容器繼承下來的font-size的幾倍大*/
+        }
+        .fz-rem {
+            font-size: 3rem;/*相對於根元素httml繼承下來的font-size的幾倍大*/
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <h1> Font Test for rem</h1>
+    <section class="fz-px">
+        <div class="fz-rem">
+            <p>This is a paragraph with a font size of 32px.</p>
+            <p class="fz-rem">font size of 32px.</p>s
+            <p class="fz.60">font size of 80% of the parent element.</p>
+            <p class="fz-em">font size of 2em.</p>
+            <p class="fz-rem">font size of 3rem.</p>
+        </div>
+        <hr>
+
+        <p>This is a paragraph with default font size.</p>
+        <p class="fz-rem">This paragraph has a font size of 32px.</p>
+        <p class="fz.80">This paragraph has a font size of 80% of the parent element.</p>
+        <p class="fz-em">This paragraph has a font size of 2em.</p>
+        <p class="fz-rem">This paragraph has a font size of 3rem.</p>
+    </section>
+    <hr>
+    <div class="fz-px">This text is 32px.</div>
+    <div>This text is 16px.</div>
+    <div class="fz-em">This text is 32px. 2em</div>
+    <div>This text is 32px.</div>
+    <div class="fz-rem">This text is 32px. 3rem</div>
+    <div>This text is 32px.</div>
+
+</body>
+</html>

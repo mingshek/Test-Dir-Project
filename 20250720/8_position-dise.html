@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            showdow: rgba(0, 0, 0, 0.5);
+        }
+        .dice {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+
+            background-color: rgb(227, 216, 216);
+            border-radius: 4%;
+            position: relative;
+        }
+        .point {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            top: calc(200px / 2 - 20px) ;
+            left: calc(200px / 2 - 20px) ;
+            border-radius: 50%;
+            
+        }
+        .point1 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            top: calc(200px / 2 - 20px) ;
+            left: calc(200px / 2 - 20px) ;
+            border-radius: 50%;
+        }
+        .point2a {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            top: calc(200px / 6 - 25px) ;
+            left: calc(200px / 2 - 25px) ;
+            border-radius: 50%;
+        }
+        .point2 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            top: calc(200px / 6 - 10px) ;
+            left: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }
+         .point3 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            top: calc(200px / 6 - 10px) ;
+            right: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }       
+         .point3a {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            top: calc(200px / 2 - 20px) ;
+            right: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }       
+         .point4 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            bottom: calc(200px / 6 - 10px ) ;
+            right: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }       
+         .point4a {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            bottom: calc(200px / 6 - 20px) ;
+            right: calc(200px / 2 - 10px) ;
+            border-radius: 50%;
+        }       
+         .point5 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            bottom: calc(200px / 6 - 10px) ;
+            left: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }       
+         .point5a {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            bottom: calc(200px / 2 - 20px) ;
+            left: calc(200px / 6 - 10px) ;
+            border-radius: 50%;
+        }       
+
+    </style>
+
+        
+</head>
+<body>
+   <div class="container">
+        <div class="dice">
+            <div class="point"></div>
+        </div>
+        <div class="dice">
+            <div class="point2"></div>
+            <div class="point4"></div>
+        </div>
+        <div class="dice">
+            <div class="point2"></div>
+            <div class="point1"></div>
+            <div class="point4"></div>
+        </div>
+        <div class="dice">
+            <div class="point2"></div>
+            <div class="point3"></div>
+            <div class="point4"></div>
+            <div class="point5"></div>
+        </div>
+        <div class="dice">
+            <div class="point2"></div>
+            <div class="point3"></div>
+            <div class="point4"></div>
+            <div class="point5"></div>            
+            <div class="point1"></div>
+        </div>
+        <div class="dice">
+            <div class="point2"></div>
+            <div class="point3"></div>
+            <div class="point4"></div>
+            <div class="point5"></div>
+            <div class="point3a"></div>
+            <div class="point5a"></div>
+
+        </div>
+
+   </div>
+
+</body>
+</html>

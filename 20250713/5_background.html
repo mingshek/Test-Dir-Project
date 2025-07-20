@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Ground</title>
+    <style>
+        .demo{
+            background-color: red;
+            
+            height: 150px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .bg-color {
+            background-color: rgb(46 210 207);
+        }
+        .bg-img {
+            /* background-image: url("../20250615/imgs/HelloKitty.png"); */
+            background-image: url("../20250713/TL2_0713a.jpg");
+
+        }
+        .bg-ctrl {
+            background-repeat: space;
+            /*background-repeat: round no-repeat;
+            background-repeat: space repeat;
+            background-repeat: no-repeat repeat;
+            background-repeat: repeat no-repeat;
+            background-repeat: space;
+            background-repeat: no-repeat.x;
+            background-repeat: no-repeat;
+            background-repeat: no-repeat.y;
+            background-repeat: repeat; */
+        }
+        .bg-ctrl1 {
+            background-repeat: round;
+        }
+        .bg-ctrl2 {
+            
+            /*background-repeat: round;*/
+            background-repeat: no-repeat;
+            background-position: right bottom; /*top right bottom left center*/
+            background-position: 50% 50%; 
+
+        }
+        .bg-ctrl3 {
+            
+            /*background-repeat: round;*/
+            background-repeat: no-repeat;
+
+            /* background-position: 50px 50%; 
+            background-size: auto 50px; */
+            /* background-size: cover; 圖片等比例放大或縮小 */
+            background-position: center; 
+            background-size: contain;
+            background-size: cover;
+            
+        }
+        .bd-attr {
+            /*簡寫屬性*/
+            /* background: none; */
+            background:#2ed2cf url("../20250713/TL2_0713a.jpg") no-repeat 50%/75%;
+
+
+
+
+        }
+        .bg-img-linear{
+            width: 100%;
+            height: 100px;
+
+            background-image: linear-gradient(90deg,red 40%,blue 100%);
+            background-image: linear-gradient(90deg,red 40%,blue 100%);
+            /* background: #222;
+            background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(221, 221, 221, 1) 50%, rgba(34, 34, 34, 1) 100%); */
+        }
+
+        .bg-img-radial{
+            width: 100%;
+            height: 100px;
+
+            background-image: radial-gradient(circle at left center,#222 20%,#000 60%,#222 63%);
+            
+        }
+    .three-img{
+        background-color: #2ed2cf;
+        background-image: url("https://picsum.photos/seed/picsum/200/300"),
+                          url("https://picsum.photos/200/300?grayscale"), 
+                          url("https://picsum.photos/id/237/200/300");
+        background-repeat: no-repeat;
+        background-position: 50% center,0% 0% ;
+    }
+    .three-liner{
+        background: 
+            linear-gradient(45deg,#b33982,transparent 50%),
+            linear-gradient(135deg,#28b9e5,transparent 50%),
+            linear-gradient(225deg,#9dc830,transparent 50%),
+            linear-gradient(315deg,#d79845,transparent 50%);
+    }
+    .four-radial{
+        background: 
+            radial-gradient(circle at 20% 20% #633982,transparent),
+            radial-gradient(circle at 80% 20% #28b9e5,transparent),
+            radial-gradient(circle at 80% 80% #9dc830,transparent),
+            radial-gradient(circle at 20% 80% #d79845,transparent);
+    }
+
+    .bg-clip-on-text{
+        width:100%;
+        height: 200px;
+        font-size: 4rem;
+        font-weight: bold;
+        background: linear-gradient(45deg,#633982,#28b9e5,#9dc830,#d79845);
+        color:transparent;
+    }
+    </style>
+
+
+</head>
+<body style="background-color: #333;">
+    <div class="bg-clip-on-text"> kldkfgjdlfkjgldkfgjldskjg</div>
+
+    <div class="demo four-radial"></div>
+    <div class="demo three-liner"></div>
+    <div class="demo three-img"></div>
+    <div class="demo bg-img-radial"></div>
+    <div class="demo bg-img-linear"></div>
+
+    <div class="demo bg-img bg-color bg-ctrl"></div>
+    <div class="demo bg-img bg-color bg-ctrl1"></div>
+    <div class="demo bg-img bg-color bg-ctrl2"></div>
+    <div class="demo bg-img bg-color bg-ctrl3"></div>
+    <div class="demo"> Hello World sslsjsdlfjsdlkjfsldkjlskdjlsdkjlsdkjflfjdlksjldfk</div>
+</body>
+</html>
