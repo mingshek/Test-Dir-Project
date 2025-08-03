@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition:all 5s linear 0s            
+        }
+        a:hover {
+            color: red;
+            background-color: black;
+        }
+/* 
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: 5s;
+        }
+        div:hover {
+            background-color: lightblue;
+            transform:translate(100px, 100px);
+        } */
+
+
+        div.demo1 {
+            div{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: 5s;
+            }
+            &:hover div {
+                background-color: lightyellow;
+                /* transform: rotate(360deg); */
+                /* transform:translate(100px, 100px); */
+                transform: translate(400px);
+                left: 400px;
+            }
+        }    
+        div.demo2 {
+            div{
+               width: 100px;
+                height: 100px;
+                background-color: lightblue;
+                transition: 5s;
+            }
+            &:hover div {
+                background-color: lightgoldenrodyellow;
+                transform: rotate(360deg); 
+            }    
+        }
+    </style>
+        
+
+</head>
+<body>
+    <div class="demo1"> <div> A </div> </div>
+    <hr>
+    <div class="demo2"> <div> B </div> </div>
+    <hr>
+    <a href="http://summer10920.github.io"> 拜訪作者聯絡  </a>
+</body>
+</html>

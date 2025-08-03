@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container-2 {
+            background-color: lightgoldenrodyellow;
+            display: flex;
+            height: 600px;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            flex-direction: row; /* 預設值 定義主軸 */
+            /* flex-direction: row-reverse; */
+            justify-content: center; /* 水平對齊 主軸置中*/
+            justify-content: flex-start; /* 水平對齊 主軸靠左 */
+
+            /* align-items: flex-start; 垂直對齊 交軸對齊方式 */
+            align-items: flex-start;
+            flex-wrap: wrap; /* 允許換行 */
+            flex-flow: row wrap; /* 簡寫方式 */
+
+            align-content: flex-start; /* 多行對齊方式 */
+
+            row-gap: 10px; /* 行間距 */
+            column-gap: 20px; /* 列間距 */
+        
+            .flex-item {
+                width: 100px;
+                height: 100px;
+                height: auto;
+                background-color: lightblue;
+                border: 1px solid;
+                font-size: 3rem;
+            }        
+            .flex-loki{
+                align-self: flex-end; /* 單一項目對齊方式 */
+                order:0 ;
+            }
+        }
+        .flex-container {
+            background-color: lightgoldenrodyellow;
+            display: flex;
+            height: 600px;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            flex-direction: row; /* 預設值 定義主軸 */
+            /* flex-direction: row-reverse; */
+            justify-content: center; /* 水平對齊 主軸置中*/
+            justify-content: flex-start; /* 水平對齊 主軸靠左 */
+
+            /* align-items: flex-start; 垂直對齊 交軸對齊方式 */
+            align-items: flex-start;
+            flex-wrap: wrap; /* 允許換行 */
+            flex-flow: row wrap; /* 簡寫方式 */
+
+            align-content: flex-start; /* 多行對齊方式 */
+
+            row-gap: 10px; /* 行間距 */
+            column-gap: 20px; /* 列間距 */
+        
+            .flex-item {
+                width: 100px;
+                height: 100px;
+                height: auto;
+                background-color: lightblue;
+                border: 1px solid;
+                font-size: 3rem;
+            }        
+        }
+        .flex-container-3 {
+            background-color: lightpink;
+            display: flex;
+            height: 600px;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            flex-direction: row; /* 預設值 定義主軸 */
+            /* flex-direction: row-reverse; */
+            justify-content: center; /* 水平對齊 主軸置中*/
+            justify-content: space-between;
+            /* justify-content: flex-start; 水平對齊 主軸靠左 */
+
+            /* align-items: flex-start; 垂直對齊 交軸對齊方式 */
+            align-items: flex-start;
+            flex-wrap: wrap; /* 允許換行 */
+            flex-flow: row wrap; /* 簡寫方式 */
+
+            align-content: flex-start; /* 多行對齊方式 */
+
+            row-gap: 10px; /* 行間距 */
+            column-gap: 20px; /* 列間距 */
+        
+            .flex-item {
+                width: 100px;
+                height: 100px;
+                height: auto;
+                background-color: lightblue;
+                border: 1px solid;
+                font-size: 3rem;
+                flex-basis: auto; /* 預設值，項目的基礎大小 */
+                flex: 0 1 auto; /* 允許縮放 */
+            }        
+            .flex-loki{
+
+                flex-basis: 25%; /* 項目的基礎大小 */
+                flex-grow: 1;
+
+        }
+
+
+    </style>
+        
+</head>
+<body>
+
+    <div class="flex-container-3">
+        <div class="flex-item" style="flex-shrink: 2">It 1</div>
+        <div class="flex-item" style="flex-shrink: 0">It 2</div>
+        <div class="flex-item  style="flex-shrink: 1">It 3</div>
+        <div class="flex-item" style="flex-grow: 2">It 1</div>
+        <div class="flex-item" style="flex-grow: 0">It 2</div>
+        <div class="flex-item flex-loki">It 3</div>
+    </div>
+
+    <div class="flex-container-1">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 11</div>
+        <div class="flex-item">Item 22</div>
+        <div class="flex-item">Item 33</div>
+        <div class="flex-item">Item 111</div>
+        <div class="flex-item">Item 222</div>
+        <div class="flex-item">Item 333</div>
+    </div>
+
+    <!-- <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, molestiae et suscipit eos corporis ducimus eligendi illo doloribus omnis hic eius animi neque, perferendis vel dolorem consequuntur, consectetur nesciunt. Veniam?</h1> -->
+
+</body>
+</html>
