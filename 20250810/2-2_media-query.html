@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body {
+            background: darkgoldenrod;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;            
+        }
+
+        img {
+            max-width: 100%;
+        }
+        @media (min-width: 500px){
+            body{
+                background-color: lightblue;                
+            }
+        } 
+        @media (min-width: 600px){
+            body{
+                background-color: lightcoral;                
+            }
+        } 
+        @media (min-width: 700px){
+            body{
+                background-color: green;  
+
+            }
+        } 
+        @media (min-width: 800px){
+            body{
+                background-color: yellow;                
+            }
+        } 
+        @media (min-width: 900px){
+            body{
+                background-color: red;                
+            }
+        }             
+
+</style>    
+</head>
+<body>
+    <img src="https://picsum.photos/200/200/?random=10" alt="Placeholder Image">
+    <img src="https://picsum.photos/200/200/?random=10" alt="Placeholder Image">
+    <img src="https://picsum.photos/200/200/?random=10" alt="Placeholder Image">
+    <img src="https://picsum.photos/200" alt="Placeholder Image">
+    <img src="https://picsum.photos/200" alt="Placeholder Image">
+
+</body>
+</html>
