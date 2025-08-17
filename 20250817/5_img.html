@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./plugins/custom.css">  -->
+    <!-- 自己定義的資料在此檔案 要含進來 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .img {
+            max-width: 400px;
+            min-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-info m-4">
+
+    <div class="container">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <picture>
+            <source srcset="01.jpg" media="(min-width:1200px)" />
+            <source srcset="https://picsum.photos/400/300/?random=10" media="(min-width:400px)" />
+        </picture>
+
+        <img src="01.jpg" alt="Random Image" class="img-fluid">
+        <img src="01.jpg" alt="Random Image" class="img rounded-4">
+        <img src="01.jpg" alt="Random Image" "img-thumbnail">
+
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae optio temporibus minima facilis officiis
+            dolorum aliquam, eum ex repellat eveniet, et voluptate, delectus voluptas maxime neque laudantium fugit
+            nostrum porro? </p>
+</body>
+
+</html>

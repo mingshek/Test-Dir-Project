@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./plugins/custom.css">  -->
+     <!-- 自己定義的資料在此檔案 要含進來 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            padding-top: 4rem;
+        }
+
+        .row>*{
+            border: 1px solid ;
+            min-height: 50px;
+        }
+    </style>
+
+    
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+
+  </div>
+</div>
+<hr>
+
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+    <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      align-items-start
+    </div>
+    <div class="col">
+      align-items-start
+    </div>
+    <div class="col">
+      align-items-start
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col">
+      align-items-center
+    </div>
+    <div class="col">
+      align-items-center
+    </div>
+    <div class="col">
+      align-items-center
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+      align-items-end
+    </div>
+    <div class="col">
+      align-items-end
+    </div>
+    <div class="col">
+      align-items-end
+    </div>
+  </div>
+</div> 
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+    <!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
+
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+  </div>
+</div>
+
+</body>
+</html>

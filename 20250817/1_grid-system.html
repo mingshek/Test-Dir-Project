@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./plugins/custom.css">  -->
+     <!-- 自己定義的資料在此檔案 要含進來 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            padding-top: 4rem;
+        }
+
+        .row>*{
+            border: 1px solid ;
+            min-height: 100px;
+        }
+    </style>
+
+    
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-3">
+      Level 1: .col-sm-3
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          Level 2: .col-8 .col-sm-6
+        </div>
+        <div class="col-4 col-sm-6">
+          Level 2: .col-4 .col-sm-6
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-auto">
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+  </div>
+  <div class="row">
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+    <div class="col"> Col  </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+    <div class="col-12 col-sm-6 col-lg-4"> Col  </div>
+  </div>
+
+</div>    
+</body>
+</html>

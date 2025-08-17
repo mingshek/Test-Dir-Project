@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./plugins/custom.css">  -->
+     <!-- 自己定義的資料在此檔案 要含進來 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            padding-top: 4rem;
+        }
+
+        .row>*{
+            border: 1px solid ;
+            min-height: 100px;
+        }
+
+        .box-100x100{
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+        }
+        .box-100x100-boder{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        
+    </style>
+
+    
+</head>
+<body>
+
+  <div class="box-100x100-boder bg-info boder"> Column1 </div>
+  <div class="box-100x100-boder bg-info boder rounded-5"> Column1 </div>
+  <div class="box-100x100-boder bg-info boder-top"> Column2 </div>
+  <div class="box-100x100-boder bg-info boder-0"> Column3 </div>
+
+  <div class="opacity-100">透明度 ...</div>
+  <div class="opacity-75">透明度 ...</div>
+  <div class="opacity-50">透明度 ...</div>
+  <div class="opacity-25">透明度 ...</div>
+</body>
+</html>
