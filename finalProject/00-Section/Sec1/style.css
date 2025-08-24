@@ -1,0 +1,10 @@
+body {
+
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+}
+
+#Jordan_A_scr img {
+  filter: grayscale(50%) sepia(80%) 
+  /* filter: blur(10px);   */
+}

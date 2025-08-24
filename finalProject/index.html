@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溫泉露營</title>
+    <link rel="stylesheet" href="./plugins/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./plugins/custom.css">  -->
+    <!-- 自己定義的資料在此檔案 要含進來 -->
+    <script src="./plugins/bootstrap.bundle.min.js"></script>
+    <!-- icon 引入 -->
+    <link rel="shortcut icon" href="./media/icon.ico" type="image/x-icon">
+    <!-- google font 引入 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome icon 引入 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css'
+        integrity='sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=='
+        crossorigin='anonymous' />
+
+    <!-- 自己定義的 css File Style.css -->
+    <link rel="stylesheet" href="./plugins/style.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark" style="--bs-dark-rgb:105,120,129" >
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="./">
+        <span class="fa-stack">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-campground fa-stack-1x text-danger"></i>
+        </span>
+        <span>洛奇營地渡假村</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav ms-auto gap-0 g-lg-4 ps-5 ps-lg-0">
+        <a class="nav-link" href="#Jordan_B_scr">營位介紹</a>
+        <a class="nav-link" href="#Jordan_C_scr">探索體驗</a>
+        <a class="nav-link" href="#Jordan_D_scr">遊客服務</a>
+        <a class="nav-link" href="#Jordan_E_scr">營區守則</a>
+        <a class="nav-link" href="#Jordan_F_scr">聯絡我們</a>
+      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+           
+
+    <section id="Jordan_A_scr" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#Jordan_A_scr" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#Jordan_A_scr" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#Jordan_A_scr" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item vh-100 active">
+                <img src="https://picsum.photos/1920/1080/?random=10" class="d-block w-100 h-100 object-fit-cover">
+                <div class="carousel-caption z-1 text-start">
+                    <h3>
+                        <label class="badge text-bg-primary">露營</label>
+                        <label class="badge text-bg-secondary">篝火</label>
+                    </h3>
+                    <h2 class="display-2 fw-bolder">體驗大自然的空氣</h2>
+                    <p class="d-none d-md-block">遠離塵囂的夢想園地，也是一個讓家人朋友們能夠更親密、更快樂的童話村！</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://picsum.photos/1920/1080/?random=11" class="d-block w-100 h-100 object-fit-cover">
+                <div class="carousel-caption z-1 text-start">
+                    <h3>
+                        <label class="badge text-bg-success">第三</label>
+                        <label class="badge text-bg-danger">第四</label>
+                    </h3>
+                    <h2 class="display-2 fw-bolder">Second slide label</h2>
+                    <p class="d-none d-md-block">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://picsum.photos/1920/1080/?random=12" class="d-block w-100 h-100 object-fit-cover">
+                <div class="carousel-caption z-1 text-start">
+                    <h3>
+                        <label class="badge bg-warning">第五</label>
+                        <label class="badge bg-info">第六</label>
+                    </h3>
+                    <h2 class="display-2 fw-bolder">Third slide label</h2>
+                    <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev w-auto" type="button" data-bs-target="#Jordan_A_scr" data-bs-slide="prev">
+            <!-- <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span> -->
+            <i class="fa-regular fa-circle-left fa-4x"></i>
+        </button>
+        <button class="carousel-control-next w-auto" type="button" data-bs-target="#Jordan_A_scr" data-bs-slide="next">
+            <!-- <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span> -->
+            <i class="fa-regular fa-circle-right fa-4x"></i>
+        </button>
+    </section>
+
+    <section id="Jordan_B_scr" class="container">
+        <div class="row row-cols-4 g-0">
+           <img src="https://picsum.photos/300/300/?random=10">  
+           <img src="https://picsum.photos/300/300/?random=11">  
+           <img src="https://picsum.photos/300/300/?random=12">  
+           <img src="https://picsum.photos/300/300/?random=13">  
+        </div>    
+
+        <header class="h2 border-start boder-5 border-warning ps-3 my-5">營位介紹</header>
+        <article class="row flex-row-reverse  row-cols-1 row-cols-lg-2 g-3 g-lg-5">
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h3 class="card-title text-warning fw-bolder">河畔 X A區</h3>
+                        <ul class="list-unstyled">                                  
+                            <li>每帳空間4X8公尺，獨立水槽與供電，共20帳</li>
+                            <li>帳邊可停車！每帳限1台車，超過酌收至指定停車場費用 $100/車</li>
+                            <li>每帳限四人，超出費用（五歲以上）酌收人頭費 $300</li>
+                            <li>D</li>
+                        </ul>
+                        <h4 class="card-text bg-opacity-100">
+                            <span class="badge rounded-pill text-bg-light"> 一宿 / $1200</span>
+                            <span class="badge rounded-pill text-bg-dark"> 夜衝 / $800</span>
+                        </h4>    
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h3 class="card-title text-warning fw-bolder">河畔 X B區</h3>
+                        <ul class="list-unstyled">                    
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                        </ul>
+                        <h4 class="card-text bg-opacity-100">
+                            <span class="badge rounded-pill text-bg-light"> 一宿 / $1200</span>
+                            <span class="badge rounded-pill text-bg-dark"> 夜衝 / $800</span>
+                        </h4>    
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h3 class="card-title text-warning fw-bolder">河畔 X C區</h3>
+                        <ul class="list-unstyled">                    
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                        </ul>
+                        <h4 class="card-text bg-opacity-100">
+                            <span class="badge rounded-pill text-bg-light"> 一宿 / $1200</span>
+                            <span class="badge rounded-pill text-bg-dark"> 夜衝 / $800</span>
+                        </h4>    
+                    </div>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="card text-bg-dark">
+                    <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+                        <h3 class="card-title text-warning fw-bolder">河畔 X D區</h3>
+                        <ul class="list-unstyled">                    
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                        </ul>
+                        <h4 class="card-text bg-opacity-100">
+                            <span class="badge rounded-pill text-bg-light"> 一宿 / $1200</span>
+                            <span class="badge rounded-pill text-bg-dark"> 夜衝 / $800</span>
+                        </h4>    
+                    </div>
+                </div>
+            </div>    
+
+        </article>
+
+    </section>
+
+
+    <section id="Jordan_C_scr" class="vh-100 bg-danger">
+        hello C
+    </section>
+    <section id="Jordan_D_scr" class="vh-100 bg-warning">
+        hello C
+    </section>
+    <section id="Jordan_E_scr" class="vh-100 bg-info">
+        hello C
+    </section>
+    <section id="Jordan_F_scr" class="vh-100 bg-secondary">
+        hello C
+    </section>
+
+
+</body>
+
+</html>
