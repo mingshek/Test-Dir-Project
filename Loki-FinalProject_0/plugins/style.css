@@ -1,12 +1,11 @@
 body {
-
-  font-family: "Roboto", sans-serif;
-  background-color: #282c34;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  background-color: #525457;
   color: #fff;
 }
 
 @media (max-width: 575px) {
-  #Jordan_A_scr .carousel-item .carousel-caption {
+  #lokiSlider .carousel-item .carousel-caption {
     left: 16px;
     right: 16px;
 
@@ -16,78 +15,84 @@ body {
   }
 }
 
-#Jordan_A_scr {
-  .carousel-indicators>button {
-
+#lokiSlider {
+  .carousel-indicators {
     gap: 10px;
 
-    >botton {
+    >button {
       width: 15px;
       height: 15px;
       border-radius: 50%;
     }
-
   }
+
   .carousel-item {
     padding-bottom: 240px;
     background-color: #282c34;
 
-
     img {
-      filter: grayscale(50%) sepia(80%)
-        /* filter: blur(10px);   */
+      filter: grayscale(50%) sepia(80%);
     }
+
     .carousel-caption {
-      /* padding-bottom: 120px; */
       bottom: unset;
-      top: 57%;
+      top: 63%;
 
       h2 {
         text-shadow: 0px -3px 3px black;
         letter-spacing: 10px;
       }
     }
+
     &::after {
       content: '';
+      background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3e%3cg opacity='0.5' stroke-width='1' stroke='%23000' fill='none'%3e%3cline y2='10' x2='10' y1='0' x1='0' /%3e%3cline y2='15' x2='5' y1='5' x1='-5' /%3e%3cline y2='5' x2='15' y1='-5' x1='5' /%3e%3c/g%3e%3c/svg%3e");
       position: absolute;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10'%3e%3cg opacity='0.5' stroke-width='1' stroke='%23000' fill='none'%3e%3cline y2='10' x2='10' y1='0' x1='0'/%3e%3cline y2='15' x2='5' y1='5' x1='-5'/%3e%3cline y2='5' x2='15' y1='-5' x1='5'/%3e%3c/g%3e%3c/svg%3e");
       left: 0;
       top: 0;
       right: 0;
       bottom: 0;
     }
   }
+
   button>i {
+    font-size: 2.5rem;
+    background: #000;
     width: 50px;
     height: 50px;
     line-height: 50px;
-    font-size: 2rem;
-    background: #009;
   }
 }
 
+
+
 @media (min-width: 992px) {
-  #Jordan_B_scr article {
-    padding-top: 280px;
+  #lokiPallet article {
+    padding-top: 290px;
 
     >.col:nth-child(odd) {
       transform: translateY(-50%);
       padding-bottom: 160px;
     }
+
     .card {
       overflow: hidden;
-      .img {
+
+      img {
         transform: scale(1.15) rotate(5deg);
         transition: 0.3s;
       }
+
       .card-img-overlay {
         transform: scale(0);
         transition: 0.3s;
       }
+
       &:hover {
         img {
           transform: scale(1.3) rotate(0deg);
         }
+
         .card-img-overlay {
           transform: scale(1);
         }
@@ -97,9 +102,18 @@ body {
 }
 
 
-#Jordan_C_scr article  .card-img-overlay{
-  overflow: hidden;
-  &::after{
+section:not(#lokiSlider) {
+  padding-top: 110px;
+}
+
+#lokiPark {
+  background: url("https://picsum.photos/1920/1200/?random=10") #3338 no-repeat center/cover fixed;
+  background-blend-mode: lighten;
+
+  article .card-img-overlay {
+    overflow: hidden;
+
+    &::after {
       content: '';
       background-color: #0005;
       backdrop-filter: blur(5px);
@@ -107,19 +121,40 @@ body {
       height: 100%;
       position: absolute;
       top: 0%;
-  }
-  .card-title{
+    }
+
+    .card-title {
       text-shadow: 1px 2px 3px #000;
       opacity: 1;
       z-index: 5;
+    }
   }
 
-    &:hover::after{
-      top: 0%;
+}
+
+@media (min-width: 992px) {
+  #lokiPark article .card-img-overlay {
+    overflow: hidden;
+
+    &::after {
+      background-color: #0009;
+      transition: top 0.3s;
+      top: 100%;
     }
 
-    .card-title{
+    .card-title {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
 
+    &:hover {
+      &::after {
+        top: 0%;
+      }
+
+      .card-title {
+        opacity: 1;
+      }
     }
   }
 }

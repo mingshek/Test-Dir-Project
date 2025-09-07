@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>洛奇營地渡假村 - 溫泉露營</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./plugins/bootstrap.min.css">
+  <script src="./plugins/bootstrap.bundle.min.js"></script>
+  <!-- Masonry -->
+  <script src="./plugins/masonry.pkgd.min.js"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" />
+  <!-- custom -->
+  <link rel="stylesheet" href="./plugins/style.css">
+  <script src="./plugins/script.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#lokiMenu">
+  <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top" data-bs-theme="dark"
+    style="--bs-dark-rgb:105,120,129">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./">
+        <span class="fa-stack">
+          <i class="fa-solid fa-circle fa-stack-2x"></i>
+          <i class="fa-solid fa-campground fa-stack-1x text-dark"></i>
+        </span>
+        <span>洛奇營地渡假村</span>
+      </a>
+      <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#lokiMenu">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="lokiMenu">
+        <div class="navbar-nav ms-auto gap-0 gap-lg-4 ps-5 ps-lg-0">
+          <a class="nav-link" href="#lokiPallet">營位介紹</a>
+          <a class="nav-link" href="#lokiPark">探索體驗</a>
+          <a class="nav-link" href="#lokiService">遊客服務</a>
+          <a class="nav-link" href="#lokiRule">營區守則</a>
+          <a class="nav-link" href="#lokiContact">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="lokiSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#lokiSlider" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#lokiSlider" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#lokiSlider" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item vh-100 active">
+        <img src="https://picsum.photos/1920/1080/?random=10" class="d-block w-100 h-100 object-fit-cover">
+        <div class="carousel-caption z-1 text-start">
+          <h3>
+            <label class="badge text-bg-primary">動態</label>
+            <label class="badge text-bg-secondary">病毒</label>
+          </h3>
+          <h2 class="display-2 fw-bolder">拉近人的溫暖</h2>
+          <p class="d-none d-sm-block">發現一座充滿能量的秘密營地，探索山林賦予的自在</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img src="https://picsum.photos/1920/1080/?random=11" class="d-block w-100 h-100 object-fit-cover">
+        <div class="carousel-caption z-1 text-start">
+          <h3>
+            <label class="badge text-bg-success">汽車</label>
+            <label class="badge text-bg-danger">保持</label>
+          </h3>
+          <h2 class="display-2 fw-bolder">體驗大自然的空氣</h2>
+          <p class="d-none d-sm-block">遠離塵囂的夢想園地，也是一個讓家人朋友們能夠更親密、更快樂的童話村！</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img src="https://picsum.photos/1920/1080/?random=12" class="d-block w-100 h-100 object-fit-cover">
+        <div class="carousel-caption z-1 text-start">
+          <h3>
+            <label class="badge bg-warning">不行</label>
+            <label class="badge bg-info">不明</label>
+          </h3>
+          <h2 class="display-2 fw-bolder">山間裡裸湯</h2>
+          <p class="d-none d-sm-block">被山包圍的裸湯，讓毛細孔全開，同時享受湯浴和森林浴，雙重享受，雙重療癒。</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev w-auto" type="button" data-bs-target="#lokiSlider" data-bs-slide="prev">
+      <i class="fa-solid fa-caret-left"></i>
+    </button>
+    <button class="carousel-control-next w-auto" type="button" data-bs-target="#lokiSlider" data-bs-slide="next">
+      <i class="fa-solid fa-caret-right"></i>
+    </button>
+  </section>
+  <section id="lokiPallet" class="container">
+    <div class="row row-cols-4 g-0">
+      <img src="https://picsum.photos/300/300/?random=10">
+      <img src="https://picsum.photos/300/300/?random=11">
+      <img src="https://picsum.photos/300/300/?random=12">
+      <img src="https://picsum.photos/300/300/?random=13">
+    </div>
+    <header class="h2 border-start border-5 border-warning ps-3 my-5">營位介紹</header>
+    <article class="row flex-row-reverse row-cols-1 row-cols-lg-2 g-3 g-lg-5">
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="card-title text-warning fw-bolder">河畔 × A區</h3>
+            <ul class="list-unstyled">
+              <li>每帳空間4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台</li>
+              <li>超過酌收至指定停車場費用 $100</li>
+              <li>每帳限四人，超出費用（五歲以上）酌收人頭費 $300</li>
+            </ul>
+            <h4 class="card-text bg-opacity-100">
+              <span class="badge rounded-pill text-bg-light">一宿 / $1200</span>
+              <span class="badge rounded-pill text-bg-dark">夜衝 / $800</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="https://picsum.photos/800/600/?random=11" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="card-title text-warning fw-bolder">河畔 × A區</h3>
+            <ul class="list-unstyled">
+              <li>每帳空間4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台，超過酌收至指定停車場費用 $100</li>
+              <li>每帳限四人，超出費用（五歲以上）酌收人頭費 $300</li>
+            </ul>
+            <h4 class="card-text bg-opacity-100">
+              <span class="badge rounded-pill text-bg-light">一宿 / $1200</span>
+              <span class="badge rounded-pill text-bg-dark">夜衝 / $800</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="https://picsum.photos/800/600/?random=12" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="card-title text-warning fw-bolder">河畔 × A區</h3>
+            <ul class="list-unstyled">
+              <li>每帳空間4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台，超過酌收至指定停車場費用 $100</li>
+              <li>每帳限四人，超出費用（五歲以上）酌收人頭費 $300</li>
+            </ul>
+            <h4 class="card-text bg-opacity-100">
+              <span class="badge rounded-pill text-bg-light">一宿 / $1200</span>
+              <span class="badge rounded-pill text-bg-dark">夜衝 / $800</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark">
+          <img src="https://picsum.photos/800/600/?random=13" class="card-img">
+          <div
+            class="card-img-overlay bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="card-title text-warning fw-bolder">河畔 × A區</h3>
+            <ul class="list-unstyled">
+              <li>每帳空間4X8公尺，獨立水槽與供電，共20帳</li>
+              <li>帳邊可停車！每帳限1台，超過酌收至指定停車場費用 $100</li>
+              <li>每帳限四人，超出費用（五歲以上）酌收人頭費 $300</li>
+            </ul>
+            <h4 class="card-text bg-opacity-100">
+              <span class="badge rounded-pill text-bg-light">一宿 / $1200</span>
+              <span class="badge rounded-pill text-bg-dark">夜衝 / $800</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section id="lokiPark" class="container-fluid">
+    <header class="container mb-5">
+      <h2 class="border-start border-5 border-warning ps-3 my-5"> 探索體驗 </h2>
+      <p class="mx-auto text-center w-75">
+        洛奇渡假村腹地面積生態豐富，擁有眾多的設施周邊供您滿足整天的玩樂。不只玩的快樂也放得輕鬆。請盡情享受我們的人間樂園，帶回流連忘返的快樂心情，為您旅途點綴豐富回憶。</p>
+    </header>
+    <article class="row flex-row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 g-md-0">
+      <div class="col">
+        <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/400/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/600/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/900/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/600/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/900/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/600/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/400/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/600/800/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/800/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img src="https://picsum.photos/900/1200/?random=10" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title">登星山景步道</h5>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section id="lokiService" class="container-fluid">
+    <header class="container h2 border-start border-5 border-warning ps-3 my-5">遊客服務</header>
+    <article class="container">
+      <div class="row flex-row row-cols-1 row-cols-lg-3 g-3">
+        <div class="col">
+          <div class="card h100 bg-secondary bg-gradient text-white rounded-0 shadow-lg py-3"
+            style="--bs-box-shadow-lg:0 1rem 3rem #fff3">
+            <div class="card-header border-0  text-center">
+              <h3 class="card-title">設備租借</h3>
+              <img class="rounded-circle border border-warning border-5 m-3"
+                src="https://picsum.photos/150/150/?random=10">
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-info">價目表</h6>
+              <ul class="ps-0">
+                <li class="py-1 d-flex justify-content-between align-items-start">
+
+                  <div>
+                    <div class="px-2 text-bg-info">Snow Peak003 四人帳</div>
+                    <p class="mb-1 px-2">300X300 cm、附釘&槌&繩</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 1200</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+
+                  <div>
+                    <div class="px-2 text-bg-info">Comma雙人床墊</div>
+                    <p class="mb-1 px-2">132X198 cm、免費打氣</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 250</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+
+                  <div>
+                    <div class="px-2 text-bg-info">大川椅</div>
+                    <p class="mb-1 px-2">速可搭免組裝</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 80</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+
+                  <div>
+                    <div class="px-2 text-bg-info">客廳帳</div>
+                    <p class="mb-1 px-2">四面邊布需另租 $500</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 500</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+
+                  <div>
+                    <div class="px-2 text-bg-info">動力延長線</div>
+                    <p class="mb-1 px-2">15米</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 50</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="px-2 text-bg-info">LED 露營燈條</div>
+                    <p class="mb-1 px-2">10米、可調光</p>
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 100</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h100 bg-secondary bg-gradient text-white rounded-0 shadow-lg py-3"
+            style="--bs-box-shadow-lg:0 1rem 3rem #fff3">
+            <div class="card-header border-0  text-center">
+              <h3 class="card-title">會館設施</h3>
+              <img class="rounded-circle border border-warning border-5 m-3"
+                src="https://picsum.photos/150/150/?random=10">
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-warning d-flex justify-content-between">
+                <span>山間裡裸湯</span>
+                <span class="badge bg-warning rounded-pill">NT 200</span>
+              </h6>
+              <p class="pb-5">
+                碳酸氫鹽泉，透過身體皮膚促進血液迴圈。加速新陳代謝，其礦物質可刺激自律神經、內分泌及免疫系統，在溫泉中沐浴時，身體將浸泡在天然礦物質中，礦物質將促進血液循環和氧氣流量增加，促進新陳代謝。
+              </p>
+              <h6 class="card-subtitle mb-2 text-warning d-flex justify-content-between">
+                <span>泛舟漂漂河</span>
+                <span class="badge bg-warning rounded-pill">NT 200</span>
+              </h6>
+              <p class="pb-5">
+                利用溪水/溯溪漂流的方式，一覽山澳獨特山水景色，並享受沁涼溪水。最專業的四對一教練配比人數，全程教練陪同，玩得安全更玩得盡興，由體驗親子交流、團隊互助的漂流樂趣.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h100 bg-secondary bg-gradient text-white rounded-0 shadow-lg py-3"
+            style="--bs-box-shadow-lg:0 1rem 3rem #fff3">
+            <div class="card-header border-0  text-center">
+              <h3 class="card-title">美味饗宴</h3>
+              <img class="rounded-circle border border-warning border-5 m-3"
+                src="https://picsum.photos/150/150/?random=10">
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-warning d-flex justify-content-between">
+                <span>烤肉組合/5人份</span>
+                <span class="badge bg-warning rounded-pill">NT 200</span>
+              </h6>
+              <ul>
+                <li>山櫻桃鴨菲力300g</li>
+                <li>塔香雞腿肉350g</li>
+                <li>岩燒豬里肌肉400g</li>
+                <li>古早味炭烤香腸5條</li>
+                <li>特製客家鹹豬肉150g</li>
+                <li>和風雪花培根片10片</li>
+                <li>薄鹽鯖魚一份</li>
+                <li>香烤基隆天婦羅5片</li>
+                <li>金黃冰心地瓜5條</li>
+                <li>燒烤蔬菜盒一份</li>
+                <li>白玉百頁10個</li>
+                <li>手工吐司1小條</li>
+                <li>拋棄式烤爐1組、木炭2斤、餐具全套組1組</li>
+                <li>特調燒烤烤肉醬1份、精緻佐料包1份</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section id="lokiRule" class="container pb-5">
+    <header class="container h2 border-start border-5 border-warning ps-3 my-5">營區守則</header>
+    <article class="row flex-row row-cols-1 row-cols-lg-3 g-3">
+      <div class="col">
+        <img src="https://picsum.photos/800/600/?random=13" class="img-fluid img-thumbnail shadow-lg">
+      </div>
+      <div class="col">
+        <h2 class="h4 border-start border-5 border-warning ps-3 mb-3"> 
+          營地營業進場時間
+        </h2>
+      </div>
+
+        
+    </article>
+  </section>
+
+</body>
+
+</html>
